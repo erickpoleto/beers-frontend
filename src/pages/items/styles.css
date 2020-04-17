@@ -1,0 +1,127 @@
+.item-container header {
+    text-align: left;
+    margin: 80px 10px 10px 10px;
+}
+
+.item-container header p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.item-container header strong {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+}
+
+.item-container header ul {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.item-container header ul li{
+    margin: 0px 20px;
+    background: white;
+    font-size: 15px;
+    box-shadow: 0 5px 10px ; 
+    padding: 10px 20px;
+}
+
+/*main*/
+
+.item-container main {
+}
+
+
+.item-container main ul {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 6px;
+    text-align: center;
+}
+
+.item-container main ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    margin: 10px 0;
+    box-shadow: 0 2px 5px;
+}
+
+.item-container main ul li img {
+    height: 200px;
+    width: 100%;
+}
+
+.item-container main ul li h2{
+    font-size: 20px;
+    
+}
+.item-container main ul li strong{
+    font-size: 17px;
+    color: grey;
+    
+}
+.item-container main ul li span{
+    margin: 5px 0 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 10px 0;
+}
+.item-container main ul li span strong{
+    margin-left: 5px;
+}
+.item-container main ul li button {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    font-weight: bold;
+    border: none;
+    background: linear-gradient(#605ef5,#add1fa);
+    
+}
+.item-container main ul li span+span+span {
+    margin: 10px 0 10px 0;
+}
+
+
+
+@media (min-width: 700px) {
+
+    .item-container header h1 {
+        margin: 0 auto;
+        width: 50%;
+    } 
+    .item-container header p {
+        color: rgba(0,0,0, 0.7);
+        margin: 0 auto;
+        width: 50%;
+    } 
+    .item-container main ul {
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 60%;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    .item-container main ul li {
+        margin: 10px auto;
+        width: 30%;
+    }
+    .item-container main ul li img {
+        height: 350px;
+        width: 100%;
+    }
+
+
+}

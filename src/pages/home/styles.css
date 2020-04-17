@@ -1,0 +1,154 @@
+.home-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home-container header {
+    background-image: url('../../staticImgs/background-home.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.home-container header div{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+}
+
+.home-container header span {
+    margin-top: 60px;
+    text-align: end;
+    margin-right: 10px;
+
+}
+
+.home-container header div h1 {
+    font-size: 65px;
+    color: #d5bc2b; 
+    margin-top: 80px;
+}
+
+.home-container header div strong {
+    margin: 30px 0 100px 0;
+    font-size: 29px;
+    color: white;
+}
+
+.home-container div form input {
+    height: 40px;
+    width: 90%;
+    border-radius: 20px;
+    margin-left: 12px;
+    
+}
+
+.home-container div form button {
+    position: relative;
+    right: 40px;
+    top: 3px;
+    border: none;
+    background: none;
+}
+
+
+
+.home-container button {
+    border: none;
+    background: none;
+
+}
+
+/*main*/
+
+.home-container main {
+
+}
+
+.home-container main h2 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    margin-top: 50px;
+}
+
+.home-container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.home-container main ul li {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%; 
+}
+
+.home-container main ul li div {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #F2F2F2;
+    padding: 10px 0 0 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-container main ul li div strong {
+    font-size: 30px;
+    margin-top: 200px;
+    font-family: 'Playfair Display SC', serif;
+    
+}
+
+.home-container main ul li div p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.7)
+}
+
+.home-container main ul li div form{
+    text-align: end;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+@media(min-width:700px){
+    
+    .home-container header{
+        height: 750px;
+    }
+    .home-container header span{
+        margin-right: 20%;
+    }
+    .home-container header div h1{
+        font-size: 8rem;
+    }
+    .home-container header div strong{
+        margin-top: 50px;
+        color: white;
+    }
+    .home-container header form input{
+        padding: 25px;
+        width: 30%;
+    }
+    .home-container main ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        grid-gap: 30px;
+    }
+}

@@ -1,0 +1,54 @@
+.about-container main {
+    margin-top: 100px;
+}
+
+.maindiv-container, .maindiv-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-container main div strong {
+    margin: 4px 0 0 0;
+    font-size: 18px;
+    color: #343336dc
+}
+
+.about-container main div span {
+    margin-bottom: 10px;
+}
+.about-container main div img {
+    height: 400px;
+    width: 100%;
+}
+
+@media (min-width: 700px) {
+    .about-container main {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-container main h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    .maindiv-container {
+        flex-direction: row;
+    }
+    .maindiv-info {
+        align-items: flex-start;
+    }
+    .maindiv-info p {
+        width: 100%;
+        text-align: left;
+    }
+    .about-container main div img {
+        width: auto;
+        height: auto;
+        margin-right: 50px;
+    }
+    
+    .about-container .maindiv-info .react-rater {
+        font-size: 40px;
+    }
+}
