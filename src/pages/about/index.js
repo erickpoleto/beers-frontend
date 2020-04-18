@@ -76,7 +76,7 @@ export default function About() {
                                         <strong><FaMapMarked size={20} style={{marginRight:"5px"}}></FaMapMarked>{item.country}</strong>
                                         <strong><FaMapMarker size={20} style={{marginRight:"5px"}}></FaMapMarker>{item.city}</strong>
                                         <strong><FaAtom size={20} style={{marginRight:"5px"}}></FaAtom> ibu:{item.ibu}</strong>
-                                        <strong><FaBlog size={20} style={{marginRight:"5px"}}></FaBlog><a href="/">{item.website}</a></strong>
+                                        <strong><FaBlog size={20} style={{marginRight:"5px"}}></FaBlog><a href={item.website}>{item.website}</a></strong>
                                         <Rater onRate={async (rating)=>{await rate(item._id, rating.rating, image)}} rating={item.rate} total={5} interactive={true}></Rater>
                                         <strong><FaBook size={20}></FaBook></strong>
                                         <p>
