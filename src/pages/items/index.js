@@ -51,11 +51,11 @@ export default function Items() {
             setFiltered([...filtered, ...response.data.docs])
             setTotal(response.data.total)
             if(response.data.pages == 1){
-                setLoading(false);  
+                 
                 return;
             }
             if(response.data.page == response.data.pages){
-                setLoading(false);  
+                  
                 return;
             }
             setPage(page + 1);
