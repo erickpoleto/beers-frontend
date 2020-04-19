@@ -99,10 +99,11 @@ export default function Items() {
                 <header>
                     
                     <h1>{search[0].replace(/%20/gi, " ")}</h1>
-                    <p>Pale ale is a top-fermented beer made with predominantly pale malt. 
-                        The highest proportion of pale malts results in a lighter colour. 
-                        The term first appeared around 1703 for 
-                        beers made from malts dried with high-carbon coke, which resulted in a lighter colour than other</p>
+                    <p>The definition of beer goes something like this: 
+                        an alcoholic beverage, made from malted cereal grain, 
+                        flavored with hops, and brewed by slow fermentation.
+                        The English word “beer” comes from the Latin “bibere” meaning,
+                         “to drink”</p>
                     <strong>sort by</strong>
                     <ul>
                         <li><button onClick={e=>{
