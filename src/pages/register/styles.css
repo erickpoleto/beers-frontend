@@ -58,7 +58,7 @@
     
 }
 @media(min-width: 700px){
-    .login-container main {
+    .register-container main {
         margin-left: auto;
         margin-right: auto;
         width: 30%;
